@@ -12,6 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <% request.setCharacterEncoding("UTF-8");%>
+        <%= "hello"%>
+        <h3>
+            <%= request.getParameter("username")%>
+        </h3>
+        <h3>
+            <%= request.getParameter("password")%>
+        </h3>
     </body>
 </html>
