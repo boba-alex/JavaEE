@@ -5,6 +5,7 @@
  */
 package servlet;
 
+import other.TestObject;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;

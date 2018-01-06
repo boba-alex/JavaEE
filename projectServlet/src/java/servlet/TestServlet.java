@@ -5,6 +5,7 @@
  */
 package servlet;
 
+import other.TestObject;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -41,10 +42,11 @@ public class TestServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             //access to context attribute
-            out.println("<h1TestObject:  " + ((TestObject)request.getServletContext().getAttribute("obj")).getName()+ "</h1>");
+            out.println("<h1>TestObject:" + ((TestObject)request.getServletContext().getAttribute("obj")).getName()+ "</h1>");
             //out.println("<h1>Servlet TestServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
+            System.out.println(((TestObject)request.getServletContext().getAttribute("obj")).getName());
         }
     }
 
