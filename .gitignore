@@ -22,3 +22,5 @@ projectServlet/nbbuild/
 projectServlet/dist/
 projectServlet/nbdist/
 projectServlet/.nb-gradle/
+/jspDemo/nbproject/private/
+/jspDemo/build/
