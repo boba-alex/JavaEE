@@ -44,6 +44,10 @@ public class Servlet2 extends HttpServlet {
 
         count++;
         request.getSession().setAttribute("COUNT", count);
+        
+        //access to context attribute
+        request.getServletContext().setAttribute("obj", new TestObject("test1"));
+        System.out.println(((TestObject)request.getServletContext().getAttribute("obj")).getName());
 
         Enumeration en = request.getParameterNames();
         try (PrintWriter out = response.getWriter()) {
