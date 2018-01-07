@@ -3,7 +3,7 @@
     Created on : 06.01.2018, 23:39:18
     Author     : User
 --%>
-
+<%@page import="testjdbc.TestConnection" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -20,5 +20,9 @@
         <h3>
             ${param["password"]}
         </h3>
+            <%
+                TestConnection tc = new TestConnection();
+                tc.check();
+            %>
     </body>
 </html>
