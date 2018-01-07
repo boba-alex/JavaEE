@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Онлайн библиотека::Вход</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/style_index.css" rel="stylesheet" type="text/css">
     </head>
     <body
         <div class="main">

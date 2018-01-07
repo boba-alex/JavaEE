@@ -1,4 +1,4 @@
-package testjdbc;
+package db;
 
 import java.sql.Statement;
 import java.sql.Connection;
@@ -12,6 +12,9 @@ import javax.sql.DataSource;
 
 public class TestConnection {
 
+    public static void main(String[] args) {
+        new TestConnection().check();
+    }
     public void check() {
 
         try {
