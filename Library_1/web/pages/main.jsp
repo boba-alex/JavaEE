@@ -18,7 +18,7 @@
             <%= request.getParameter("username")%>
         </h3>
         <h3>
-            <%= request.getParameter("password")%>
+            ${param["password"]}
         </h3>
     </body>
 </html>
