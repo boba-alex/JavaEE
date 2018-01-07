@@ -16,7 +16,7 @@ public class TestConnection {
 
         try {
             InitialContext ic = new InitialContext();
-            DataSource ds = (DataSource) ic.lookup("jdbc/sample");
+            DataSource ds = (DataSource) ic.lookup("jdbc/myJNDI");
             Connection conn = ds.getConnection();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("select * from book");
