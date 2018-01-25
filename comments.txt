@@ -1,0 +1,2 @@
+https://netbeans.org/kb/docs/web/mysql-webapp_ru.html#prepareCommunication
+//helpful site to set up database resource and connectionpool
