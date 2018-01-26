@@ -13,7 +13,7 @@ public class Book implements Serializable {
     private String isbn;
     private String genre;
     private String author;
-    private Date publishDate;
+    private int publishDate;
     private String publisher;
     private byte[] image;
 
@@ -73,11 +73,11 @@ public class Book implements Serializable {
         this.author = author;
     }
 
-    public Date getPublishDate() {
+    public int getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(int publishDate) {
         this.publishDate = publishDate;
     }
 

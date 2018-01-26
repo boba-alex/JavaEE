@@ -192,3 +192,16 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     float:left;
     margin-top: 10px;
 }
+
+.letters{
+    float:left;
+    height: 20px;
+    margin: 10px;
+}
+
+.letters a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
