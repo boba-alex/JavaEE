@@ -12,7 +12,7 @@
 
 <div class="book_list">
 
-    ///
+
 
     <%
         ArrayList<Book> list = null;
@@ -34,6 +34,10 @@
             if (searchStr != null && !searchStr.trim().equals("")) {
                 list = bookList.getBooksBySearch(searchStr, type);
             }
+        } else if (session.getAttribute("currentBookList") != null) {
+            list = (ArrayList<Book>) session.getAttribute("currentBookList");
+        } else {
+            list = bookList.getAllBooks();
         }
     %>
     <h5 style="text-align: left; margin-top:20px;">Найдено книг: <%=list.size()%> </h5>

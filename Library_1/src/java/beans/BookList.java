@@ -9,7 +9,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import db.Database;
 import enums.SearchType;
-import javax.swing.ImageIcon;
 
 public class BookList {
 
@@ -50,9 +49,9 @@ public class BookList {
                 if (rs != null) {
                     rs.close();
                 }
-//                if (conn != null) {
-//                    conn.close();
-//                }
+                if (conn != null) {
+                    conn.close();
+                }
             } catch (SQLException ex) {
                 Logger.getLogger(BookList.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -80,7 +79,7 @@ public class BookList {
         }
     }
 
-    public ArrayList<Book> getBooksByLetter(String letter) {;
+    public ArrayList<Book> getBooksByLetter(String letter) {
         return getBooks("select b.id,b.name,b.isbn,b.page_count,b.publish_year, p.name as publisher, a.fio as author, g.name as genre, b.image from book b "
                 + "inner join author a on b.author_id=a.id "
                 + "inner join genre g on b.genre_id=g.id "
