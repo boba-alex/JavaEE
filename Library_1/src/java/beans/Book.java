@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Book implements Serializable {
-    
+
     private long id;
     private String name;
     private byte[] content;// pdf файла загружаем в это поле только в нужный момент (для просмотра)
@@ -111,9 +111,9 @@ public class Book implements Serializable {
             conn = Database.getConnection();
             stmt = conn.createStatement();
 
-            rs = stmt.executeQuery("select content from book where id="+this.getId());
+            rs = stmt.executeQuery("select content from book where id=" + this.getId());
             while (rs.next()) {
-               this.setContent(rs.getBytes("content"));
+                this.setContent(rs.getBytes("content"));
             }
 
         } catch (SQLException ex) {
