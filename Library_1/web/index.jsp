@@ -6,7 +6,7 @@
         <title>Онлайн библиотека::Вход</title>
         <link href="css/style_index.css" rel="stylesheet" type="text/css">
     </head>
-    <body
+    <body>
         <div class="main">
             <div class="content">
                 <p class="title"><span class="text"><img src="images/lib.png" width="76" height="77" hspace="10" vspace="10" align="middle"></span></p>
